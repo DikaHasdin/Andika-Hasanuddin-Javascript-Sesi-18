@@ -1,0 +1,62 @@
+*{
+    font-family: 'Lucida Sans';
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main > div{
+    height: 280px;
+    display: flex;
+}
+
+.Cardleft {
+    border: 2px solid gray;
+    width: 50%;
+    margin: 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.Cardleft-1{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.Cardleft-1 > div{
+    border: 1px solid black;
+    border-radius: 5px 5px 5px 5px;
+    width: 185px;
+}
+
+.menu-image {
+    height: 60%;
+}
+
+.menu-name {
+    /* border-top: 1px solid black; */
+    height: 20%;
+}
+
+.menu-qty {
+    border-top: 1px solid black;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.Cardright {
+    border: 2px solid gray;
+    width: 50%;
+    margin: 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+table, th, td {
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+  }

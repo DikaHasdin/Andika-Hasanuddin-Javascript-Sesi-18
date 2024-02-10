@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="asdfg">
+        
+    </div>
+    <div class="main">
+        <div class="section-1">
+            <div class="Cardleft Cardleft-1" id="daftarMenu">
+                <!-- <div class="menu">
+                    <div class="menu-image"><img style="width: 185px; height: 141px; margin-left: -20x; border-radius: 5px 5px 0px 0px" src="image/bakso.jfif"></div>
+                    <div class="menu-name">
+                        <div style="height: 50%; text-align: center;">Buku</div>
+                        <div style="text-align: center;">Rp 5.000</div>
+                    </div>
+                    <div class="menu-qty">
+                        <div style="width: 30%; text-align: center; padding: 5px;"><button style="width: 45px; height: 36px; font-size: 25px;">-</button></div>
+                        <div style="width: 40%; font-size: 15px; text-align: center; padding-top: 15px;">2</div>
+                        <div style="width: 30%; text-align: center; padding: 5px;"><button style="width: 45px; height: 36px; font-size: 20px;">+</button></div>
+                    </div>
+                </div> -->
+                <!-- <div class="menu">
+                    <div class="menu-image"><img style="width: 185px; height: 141px; margin-left: -20x; border-radius: 5px 5px 0px 0px" src="image/mieAyam.jfif"></div>
+                    <div class="menu-name">
+                        <div style="height: 50%; text-align: center;">Buku</div>
+                        <div style="text-align: center;">Rp 5.000</div>
+                    </div>
+                    <div class="menu-qty">
+                        <div style="width: 30%; text-align: center; padding: 5px;"><button style="width: 45px; height: 36px; font-size: 25px;">-</button></div>
+                        <div style="width: 40%; font-size: 15px; text-align: center; padding-top: 15px;">2</div>
+                        <div style="width: 30%; text-align: center; padding: 5px;"><button style="width: 45px; height: 36px; font-size: 20px;">+</button></div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div class="menu-image"><img style="width: 185px; height: 141px; margin-left: -20x; border-radius: 5px 5px 0px 0px" src="image/esJeruk.jfif"></div>
+                    <div class="menu-name">
+                        <div style="height: 50%; text-align: center;">Buku</div>
+                        <div style="text-align: center;">Rp 5.000</div>
+                    </div>
+                    <div class="menu-qty">
+                        <div style="width: 30%; text-align: center; padding: 5px;"><button style="width: 45px; height: 36px; font-size: 25px;">-</button></div>
+                        <div style="width: 40%; font-size: 15px; text-align: center; padding-top: 15px;">2</div>
+                        <div style="width: 30%; text-align: center; padding: 5px;"><button style="width: 45px; height: 36px; font-size: 20px;">+</button></div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="Cardright" style="padding: 15px 0px; display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                    <table style="width: 95%; margin: 0px 20px;">
+                        <thead>
+                            <tr>
+                                <th>NO</th>
+                                <th>MENU</th>
+                                <th>QTY</th>
+                                <th>HARGA</th>
+                                <th>TOTAL</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbodyPembelian">
+                            <!-- <tr>
+                                <td>1</td>
+                                <td>Bakso</td>
+                                <td>2</td>
+                                <td>15.000</td>
+                                <td>30.000</td>
+                            </tr> -->
+                            <!-- <tr>
+                                <td>1</td>
+                                <td>Bakso</td>
+                                <td>2</td>
+                                <td>15.000</td>
+                                <td>30.000</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Bakso</td>
+                                <td>2</td>
+                                <td>15.000</td>
+                                <td>30.000</td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+                <div style="display: flex; justify-content: space-around;">
+                    <div style="padding: 2px;">
+                        <input type="text" style="width: 135px; height: 20px;" name="subtotal" id="subtotal" placeholder="SUBTOTAL">
+                    </div>
+                    <div style="padding: 2px;">
+                        <input onchange="bayar(value)" type="text" style="width: 135px; height: 20px;" name="bayar" id="bayar" placeholder="BAYAR">
+                    </div>
+                    <div style="padding: 2px;">
+                        <input type="text" style="width: 135px; height: 20px;" name="kembalian" id="kembalian" placeholder="KEMBALIAN">
+                    </div>
+                    <div style="padding: 2px;">
+                        <button onclick="submit()" type="submit" style="width: 100px; height: 25px;">SAVE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-2">
+            <div class="Cardleft">
+                <table style="width: 95%; margin: 20px 20px;">
+                    <thead>
+                        <tr>
+                            <th>NO</th>
+                            <th>MENU</th>
+                            <th>QTY</th>
+                            <th>HARGA</th>
+                            <th>TOTAL</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyPenjualan">
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="4">TOTAL PENDAPATAN</th>
+                            <th id="totPendapatan"></th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="Cardright">
+                <figure class="highcharts-figure">
+                    <div style="width: 500px; height: 240px;" id="container"></div>
+                </figure>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+</html>
